@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    font-family: Arial, sans-serif;
+}
+
+.stopWatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8fafc;
+    border: none;
+    border-radius: 24px;
+    padding: 40px 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-top: 6px solid #14b8a6;
+}
+
+.display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #1e293b;
+    text-shadow: none;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-bottom: 2px dashed #cbd5e1;
+}
+
+.controls button{
+     font-size: 1.4rem;
+     font-weight: bold;
+     padding: 12px 22px;
+     margin: 5px;
+     min-width: 115px;
+     border: none;
+     border-radius: 12px;
+     cursor: pointer;
+     color: white;
+     transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.controls button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.controls button:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.start-button{
+    background-color: #10b981;
+}
+
+.start-button:hover{
+    background-color: #059669;
+}
+
+.stop-button{
+    background-color: #ef4444;
+}
+
+.stop-button:hover{
+    background-color: #dc2626;
+}
+
+.reset-button{
+    background-color: #6366f1;
+}
+
+.reset-button:hover{
+    background-color: #4f46e5;
+}
